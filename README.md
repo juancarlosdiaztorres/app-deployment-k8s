@@ -16,7 +16,7 @@ $ sudo docker build -t app-local-ip:0.1 .
 2. Run a container based on that image:
 
 ```
-$ sudo docker run -h myHostnameIBM --publish 80:80 --detach --name myapp app-local-ip:0.1
+$ sudo docker run -h myHostname --publish 80:80 --detach --name myapp app-local-ip:0.1
 ```
 
 ## App deploument using K8s
