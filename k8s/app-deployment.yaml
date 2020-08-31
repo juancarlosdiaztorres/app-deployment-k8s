@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ip-app
+  namespace: test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ip-app
+  template:
+    metadata:
+      labels:
+        app: ip-app
+    spec:
+      containers:
+      - name: app-local-ip
+        image: app-local-ip:0.1
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
