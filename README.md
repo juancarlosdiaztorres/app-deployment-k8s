@@ -19,7 +19,7 @@ $ sudo docker build -t app-local-ip:0.1 .
 $ sudo docker run -h myHostname --publish 80:80 --detach --name myapp app-local-ip:0.1
 ```
 
-## App deploument using K8s
+## App deployment using K8s
 
 Inside /k8s folder, yaml files are written to create a new deployment and a new service:
 
